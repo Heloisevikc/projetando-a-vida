@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(145deg, #f8f0ff 0%, #f3e5ff 100%);
+    color: #3c2a4d;
+    line-height: 1.5;
+}
+
+/* ===== NAVBAR ROXA ===== */
+header {
+    background-color: #7b2cbf;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(123, 44, 191, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.logo-icon {
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #f3e8ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd6e0;
+    transform: translateY(-2px);
+}
+
+.mobile-menu {
+    display: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* ===== SEÇÃO HERÓI ===== */
+.hero {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: linear-gradient(120deg, #ffffff, #faf5ff);
+    margin-bottom: 2rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #2c1a3a;
+}
+
+.roxo-destaque {
+    color: #9b4dff;
+    background: linear-gradient(135deg, #c084fc, #a855f7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #5a4a6e;
+    margin-bottom: 2rem;
+}
+
+.btn-roxo {
+    background: linear-gradient(95deg, #a855f7, #7b2cbf);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(123, 44, 191, 0.3);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn-roxo:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(123, 44, 191, 0.4);
+    background: linear-gradient(95deg, #c084fc, #9333ea);
+}
+
+.frase-card {
+    margin-top: 2rem;
+    background: white;
+    border-radius: 28px;
+    padding: 1.8rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border-left: 8px solid #c084fc;
+}
+
+/* ===== SEÇÃO METAS ===== */
+.metas-section {
+    padding: 4rem 2rem;
+    background: #ffffffd9;
+    border-radius: 60px 60px 0 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #7b2cbf;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #6c4a8e;
+    margin-bottom: 2rem;
+}
+
+.metas-form {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.metas-form input {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border-radius: 50px;
+    border: 1px solid #e2d4f0;
+    font-family: 'Quicksand', sans-serif;
+    background: #fefcff;
+}
+
+.metas-form button {
+    background: #b77cff;
+    border: none;
+    padding: 0 1.8rem;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.metas-form button:hover {
+    background: #9b4dff;
+}
+
+#listaMetas {
+    list-style: none;
+}
+
+#listaMetas li {
+    background: #f9f3ff;
+    margin: 0.8rem 0;
+    padding: 0.8rem 1.2rem;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e9d8ff;
+    color: #3c2a4d;
+    font-weight: 500;
+}
+
+#listaMetas li::after {
+    content: "✔️";
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+#listaMetas li:hover::after {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Seção Inspiração */
+.inspiracao-section {
+    background: linear-gradient(135deg, #f3e5ff, #faf0ff);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.inspiracao-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 48px;
+    max-width: 700px;
+    margin: 2rem auto;
+    box-shadow: 0 20px 35px rgba(123, 44, 191, 0.1);
+}
+
+.inspiracao-card p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #3c2a4d;
+    margin-bottom: 1.8rem;
+}
+
+.inspiracao-card button {
+    background: none;
+    border: 2px solid #c084fc;
+    color: #a855f7;
+    padding: 0.6rem 1.8rem;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.inspiracao-card button:hover {
+    background: #c084fc20;
+    transform: scale(0.98);
+}
+
+/* Galeria */
+.galeria-section {
+    padding: 4rem 2rem;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card-galeria {
+    background: white;
+    border-radius: 32px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px #e5d5fa;
+}
+
+.card-galeria:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 30px #cfbcfa;
+}
+
+.emoji-grande {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background: #2c1a3a;
+    color: #ddccff;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #7b2cbf;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .metas-form {
+        flex-direction: column;
+    }
+}
