@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Mundo Roxo | Diário de Sonhos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <span class="logo-text">meuMundoRoxo</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#metas">Metas</a></li>
+                <li><a href="#inspiracao">Inspiração</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+            </ul>
+            <div class="mobile-menu">☰</div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Início com Frase Motivacional -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>🌷 Organize seus sonhos <br> com um toque <span class="roxo-destaque">especial</span></h1>
+                <p>Um cantinho só seu para planejar, inspirar e realizar.</p>
+                <button id="fraseBtn" class="btn-roxo">✨ Me dê uma frase ✨</button>
+                <div id="fraseContainer" class="frase-card">
+                    <p id="fraseMotivacional">Clique no botão para receber uma dose de inspiração...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Metas -->
+        <section id="metas" class="metas-section">
+            <div class="container">
+                <h2>📝 Minhas Metas</h2>
+                <p class="subtitulo">O que você quer conquistar? Adicione aqui seus objetivos.</p>
+                <div class="metas-form">
+                    <input type="text" id="novaMetaInput" placeholder="Escreva uma nova meta...">
+                    <button id="adicionarMetaBtn">Adicionar</button>
+                </div>
+                <ul id="listaMetas">
+                    <li>💜 Terminar meu projeto pessoal</li>
+                    <li>💜 Praticar autocuidado toda semana</li>
+                    <li>💜 Aprender algo novo por mês</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção de Inspiração Diária -->
+        <section id="inspiracao" class="inspiracao-section">
+            <div class="container">
+                <h2>🌙 Inspire-se</h2>
+                <div class="inspiracao-card">
+                    <p id="inspiracaoTexto">"Acredite no poder dos seus sonhos e na força dos seus pequenos passos."</p>
+                    <button id="novaInspiracaoBtn">Nova Inspiração</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Galeria -->
+        <section id="galeria" class="galeria-section">
+            <div class="container">
+                <h2>🖼️ Cantinho do Afeto</h2>
+                <div class="galeria-grid">
+                    <div class="card-galeria">
+                        <div class="emoji-grande">🌸</div>
+                        <p>Florescer</p>
+                    </div>
+                    <div class="card-galeria">
+                        <div class="emoji-grande">🕯️</div>
+                        <p>Paz interior</p>
+                    </div>
+                    <div class="card-galeria">
+                        <div class="emoji-grande">☕</div>
+                        <p>Pausa</p>
+                    </div>
+                    <div class="card-galeria">
+                        <div class="emoji-grande">💫</div>
+                        <p>Brilho próprio</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito com ✨ para um mundo mais roxo e cheio de sonhos.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
